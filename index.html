@@ -1,0 +1,14 @@
+ <html>
+   <body>
+      <form action = "http://localhost:5000/xyz" method = "post">
+         <p>Enter Email ID:</p>
+         <p><input type = "text" name = "nm" /></p>
+         <p><input type = "submit" value = "submit" /></p>
+      </form>
+      {% for i in output %}
+         {% for d in i %}
+           <p>{{d}}</p>
+         {% endfor %}
+      {% endfor %}
+   </body>
+</html>
